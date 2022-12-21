@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Game with JS</title>
+</head>
+<body>
+    <div class="game">
+        <div class="game--container">
+            <div class="game--information">
+                <div class="game--information__lives">
+                    <p><span class="lives"></span> </p>
+                </div>
+                <div class="game--information__coins">
+                    <p><span class="coins"></span> </p>
+                </div>
+                <div class="game--information__time">
+                    <p><span class="time"></span></p>
+                </div>
+            </div>
+            <canvas id="game" class="canvas"></canvas>
+            <div class="game--buttons__container">
+                <div class="game--buttons__top">
+                    <button id="up" class="button--gaming"">Up</button>
+                </div>
+                <div class="game--buttons__bottom">
+                    <button id="left" class="button--gaming">Left</button>
+                    <button id="down" class="button--gaming">Down</button>
+                    <button id="right" class="button--gaming">Rigth</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="finish inactive">
+        <div class="restart">
+            <div class="restart--text">
+                <p class="restart--text__p">Reiniciar?</p>
+            </div>
+            <div class="restart--buttons">
+                <button class="button--gaming button--go">¡Vamos!</button>
+                <button class="button--gaming button--cancel">No...</button>
+            </div>
+            <div class="game--records">
+                <div class="game-records__best">
+                    <p class="result"></p>
+                    <p><span class="best"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="maps.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

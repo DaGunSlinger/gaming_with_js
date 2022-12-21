@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: indigo;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.inactive{
+    display: none;
+}
+.game--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem auto 0 auto;
+    width: 80%;
+    height: auto;
+}
+.game--information{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 700px;
+    font-size: 2rem;
+}
+.game--information .game--information__lives{
+    justify-self: left;
+}
+
+.game--information .game--information__coins{
+    justify-self: center;
+}
+
+.game--information .game--information__time{
+    justify-self: right;
+}
+.canvas {
+    top: 0;
+    border: 4px solid #ff6600;
+    border-radius: 8px;
+    background-color: #feff9d;
+}
+
+.game--buttons__container {
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 90%;
+}
+.button--gaming{
+    background-color: #fdef05;
+    border: 1px solid;
+    border-radius: 1rem;
+    border-color: #ff6600;
+    font-family: inherit;
+    width: 10rem;
+    height: 5rem;
+    cursor: pointer;
+}
+.button--gaming:active {
+    border-color: #fdef05;
+    background-color: #ff6600;;
+    color: white;
+}
+.game--buttons__top{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.game--buttons__bottom{
+    display: flex;
+    justify-content: center;
+}
+
+button:not(:last-child) {
+    margin-right: 10px;
+}
+
+p {
+    display: block;
+    margin: 0;
+    width: 100%;
+}
+
+.restart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.restart--text{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.restart--buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game--records{
+    margin-top: 6rem;
+    font-size: 2rem;
+}
+.game--records .game-records__best{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+@media(min-width: 700px){
+    .button--gaming:hover {
+        background-color: #ff6600;
+        color: white;
+    }
+    .game--container {
+        margin: 2rem auto 0 auto;
+    }
+    .game--information{
+        font-size: 4rem;
+    }
+}
